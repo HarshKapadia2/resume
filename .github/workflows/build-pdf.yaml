@@ -41,9 +41,8 @@ jobs:
               run: git add resume.pdf
 
             - name: Deploy to GitHub Pages
-              uses: JamesIves/github-pages-deploy-action@3.7.1
+              uses: JamesIves/github-pages-deploy-action
               with:
-                  GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
                   BRANCH: gh-pages
                   FOLDER: build
                   CLEAN: true
