@@ -1,4 +1,4 @@
-name: Compile and Upload Resume PDF
+name: Compile and upload résumé PDF
 on:
     push:
         branches:
@@ -6,6 +6,14 @@ on:
         paths:
             - "resume.tex"
             - "index.html"
+            - ".github/workflows/**"
+    pull_request:
+        branches:
+            - "main"
+        paths:
+            - "resume.tex"
+            - "index.html"
+            - ".github/workflows/**"
 
 jobs:
     build_latex:
