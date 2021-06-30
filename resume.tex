@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Harsh Kapadia} \\ \vspace{2pt}
+    \small
+    \faPhone \href{mailto:harshgkapadia@gmail.com}{\raisebox{-0.1\height}\ +91 75064 12914} ~ \faEnvelope \href{mailto:harshgkapadia@gmail.com}{\raisebox{-0.2\height}\  harshgkapadia@gmail.com} ~ 
+    \faLinkedin \href{https://linkedin.com/in/harshgkapadia/}{\raisebox{-0.2\height}\ linkedin.com/in/harshgkapadia} ~
+    \faGithub \href{https://github.com/HarshKapadia2}{\raisebox{-0.2\height}\ github.com/HarshKapadia2}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {Mumbai University}{2018 -- 2022}
+        {Bachelor of Engineering in Information Technology}{Mumbai, India}
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{git\_basics} $|$ \emph{Asciidoctor, HTML, CSS, JS, GitHub Pages}}{Mar 2020 -- present}
+            \resumeItemListStart
+                \resumeItem{A PWA and TWA for Git and GitHub concepts and commands.}
+                \resumeItem{Live demo: \href{https://harshkapadia2.github.io/git_basics/}{harshkapadia2.github.io/git\_basics}, \href{https://play.google.com/store/apps/details?id=com.harsh_kapadia.git_basics}{Google Play Store} $|$ GitHub: \href{https://github.com/HarshKapadia2/git_basics}{HarshKapadia2/git\_basics}}
+            \resumeItemListEnd
+        \vspace{-13pt}
+
+        \resumeProjectHeading
+            {\textbf{HPS Gems} $|$ \emph{HTML, CSS, JS, PHP, MySQL, Heroku}}{Oct 2020 -- Dec 2020}
+            \resumeItemListStart
+                \resumeItem{A JAMstack e-Commerce web app dealing in raw gemstones.}
+                \resumeItem{Live demo: \href{https://hps-gems.herokuapp.com/}{hps-gems.herokuapp.com} $|$ GitHub: \href{https://github.com/HarshKapadia2/hps-gems}{HarshKapadia2/hps-gems}}
+            \resumeItemListEnd
+        \vspace{-13pt}
+    
+        \resumeProjectHeading
+            {\textbf{Preview Markdown} $|$ \emph{React.js, HTML, CSS, JS, GitHub Pages}}{Jun 2021}
+            \resumeItemListStart
+                \resumeItem{A live Markdown previewer.}
+                \resumeItem{Live demo: \href{https://harshkapadia2.github.io/preview-markdown/}{harshkapadia2.github.io/preview-markdown} $|$ GitHub: \href{https://github.com/HarshKapadia2/preview-markdown}{HarshKapadia2/preview-markdown}}
+            \resumeItemListEnd
+        \vspace{-13pt}
+
+        \resumeProjectHeading
+            {\textbf{Attendance Manager} $|$ \emph{Flask, Firebase, Heroku}}{Apr 2020 -- May 2020}
+            \resumeItemListStart
+                \resumeItem{A SSR web app for managing student attendance.}
+                \resumeItem{Live demo: \href{https://attendance-management-flask.herokuapp.com/}{attendance-management-flask.herokuapp.com} $|$ GitHub: \href{https://github.com/HarshKapadia2/attendance_management}{HarshKapadia2/attendance\_management}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------SKILLS-----------
+\section{Skills}
+    \begin{itemize}[leftmargin=0.2in, label={}]
+    {\item{
+        \textbf{Front end}: HTML, CSS, JS, React.js \\
+        \textbf{Back end}: Node.js, Flask, PHP \\
+        \textbf{Databases}: MySQL, MongoDB \\
+        \textbf{Platforms}: Firebase, Heroku \\
+        \textbf{Tools}: Git, GitHub, Adobe Illustrator, Figma \\
+        \textbf{Languages}: JavaScript, Java
+    }}
+    \end{itemize}
+\vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Our Tech Community (OTC)}{Jan 2020 -- present}
+            {Founder}{}
+            \resumeItemListStart
+                \resumeItem{A Tech-loving open-to-all community.}
+                \resumeItem{Host at OTC CatchUp, a weekly project showcase and discussion on various technologies.}
+                \resumeItem{Group: \href{https://otc.zulipchat.com/}{otc.zulipchat.com} $|$ Session summaries: \href{https://twitter.com/OurTechComm}{Twitter @OurTechComm}}
+            \resumeItemListEnd
+    
+        \resumeSubheading
+            {Talks}{Jun 2020 -- present}
+            {Speaker}{}
+            \resumeItemListStart
+                \resumeItem{Conducted more than 12 sessions and workshops.}
+                \resumeItem{Given more than 8 talks and workshops on Git and GitHub, \textbf{teaching over 500 people}.}
+                \resumeItem{Talk details: \href{https://harshkapadia2.github.io/talks/}{harshkapadia2.github.io/talks} $|$ YouTube: \href{https://www.youtube.com/HarshKapadia}{youtube.com/HarshKapadia}}
+            \resumeItemListEnd
+    
+        \resumeSubheading
+            {TSEC CodeCell}{Sep 2019 -- present}
+            {Senior Committee Member}{}
+            \resumeItemListStart
+                \resumeItem{Organised two hackathons, TSEC Hacks 2020 and 2021.}
+                \resumeItem{Conducted a workshop on Git and GitHub. (\href{https://www.youtube.com/watch?v=ArOKEf8nkfw}{YouTube})}
+                \resumeItem{Displayed leadership, organisational and graphic design skills.}
+            \resumeItemListEnd
+    
+        \resumeSubheading
+            {GRT Global Logistics Pvt. Ltd.}{Dec 2019}
+            {Software Testing Intern}{Mumbai, India}
+            \resumeItemListStart
+                \resumeItem{Manually tested ERP software.}
+                \resumeItem{Learnt how to thoroughly test software and about general SDLC tasks.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Volunteer Work and Interests}
+    \begin{itemize}[leftmargin=0.2in, label={}]
+    {\item{
+        Volunteered at Rotaract Club TSEC. \\
+        \textbf{Interests}: Music, Bird watching
+    }}
+    \end{itemize}
+
+
+\end{document}

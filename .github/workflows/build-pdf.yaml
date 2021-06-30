@@ -1,0 +1,41 @@
+name: Compile and Upload Resume PDF
+on:
+    push:
+        branches:
+            - "main"
+        paths:
+            - "resume.tex"
+            - "index.html"
+
+jobs:
+    build_latex:
+        runs-on: ubuntu-latest
+        container:
+            image: danteev/texlive:latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+              with:
+                  persist-credentials: false
+
+            - name: Compile LaTeX document
+              uses: xu-cheng/latex-action@v2
+              with:
+                  root_file: resume.tex
+
+            - name: Post Processing
+              run: |
+                  mkdir build 
+                  cp *.pdf build/ 
+                  cp index.html build/
+
+            - name: Git add
+              run: git add resume.pdf
+
+            - name: Deploy to GitHub Pages
+              uses: JamesIves/github-pages-deploy-action@3.7.1
+              with:
+                  GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+                  BRANCH: gh-pages
+                  FOLDER: build
+                  CLEAN: true
