@@ -36,9 +36,10 @@ jobs:
                   mkdir build 
                   cp *.pdf build/ 
                   cp index.html build/
+                  mv "build/resume.pdf" "build/Résumé for Harsh Kapadia.pdf"
 
             - name: Git add
-              run: git add resume.pdf
+              run: git add "Résumé for Harsh Kapadia.pdf"
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.4
