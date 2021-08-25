@@ -37,6 +37,7 @@ jobs:
                   cp *.pdf build/ 
                   cp index.html build/
                   mv "build/resume.pdf" "build/Résumé for Harsh Kapadia.pdf"
+                  ls build/
 
             - name: Git add
               run: git add "Résumé for Harsh Kapadia.pdf"
