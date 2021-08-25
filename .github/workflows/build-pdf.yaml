@@ -40,7 +40,7 @@ jobs:
                   ls build/
 
             - name: Git add
-              run: git add "Résumé for Harsh Kapadia.pdf"
+              run: git add *.pdf
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.4
