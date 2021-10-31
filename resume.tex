@@ -88,7 +88,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+      \vspace{-2pt}\textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -123,6 +123,7 @@
 
 \begin{document}
 
+
 %----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 %   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
@@ -133,10 +134,10 @@
     {\Huge \scshape Harsh Kapadia} \\ \vspace{2pt}
     \small
     \faGlobe \href{httos://harshkapadia.me}{\raisebox{-0.1\height}\ harshkapadia.me} ~
-    \faEnvelope \href{mailto:harshgkapadia@gmail.com}{\raisebox{-0.2\height}\  harshgkapadia@gmail.com} ~
+    \faEnvelope \href{mailto:contact@harshkapadia.me}{\raisebox{-0.2\height}\  contact@harshkapadia.me} ~
     \faLinkedin \href{https://linkedin.com/in/harshgkapadia}{\raisebox{-0.2\height}\ linkedin.com/in/harshgkapadia} ~
     \faGithub \href{https://github.com/HarshKapadia2}{\raisebox{-0.2\height}\ github.com/HarshKapadia2}
-    \vspace{-8pt}
+    \vspace{-13pt}
 \end{center}
 
 
@@ -147,6 +148,7 @@
         {University of Mumbai (Thadomal Shahani Engineering College)}{2018 -- 2022 (exp)}
         {Bachelor of Engineering in Information Technology (CGPA: 8.91/10)}{Mumbai, India}
     \resumeSubHeadingListEnd
+\vspace{-14pt}
 
 
 %-----------SKILLS-----------
@@ -157,20 +159,21 @@
         \textbf{Databases}: MySQL, MongoDB \\
         \textbf{Platforms}: GitHub, Firebase, Heroku \\
         \textbf{Tools}: Git, Adobe Illustrator, Figma \\
-        \textbf{Languages}: JavaScript, Java
+        \textbf{Languages}: JavaScript, Java \\
+        \textbf{Mobile}: React Native
     }}
     \end{itemize}
-\vspace{-16pt}
+\vspace{-20pt}
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {NanoNet Technologies Inc.}{Aug 2021 - present}
+            {NanoNet Technologies Inc.}{Aug 2021 - Nov 2021}
             {Software Intern}{}
             \resumeItemListStart
-                \resumeItem{Migrated API specification from Swagger 2.0 to OpenAPI 3.1.0.}
+                \resumeItem{Migrated NanoNets' API specification from Swagger 2.0 to OpenAPI 3.1.0.}
                 \resumeItem{Developed a Node.js and React Native JavaScript SDK for the NanoNets API and published it on NPM.}
             \resumeItemListEnd
 
@@ -181,7 +184,7 @@
                 \resumeItem{Tested ERP software.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-19pt}
 
 
 %-----------PROJECTS-----------
@@ -189,73 +192,79 @@
     \vspace{-5pt}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{git\_basics} $|$ \emph{Asciidoctor, CSS, JS, GitHub Pages}}{Mar 2020 -- present}
+            {\textbf{\large{git\_basics}} $|$ \emph{Asciidoctor, CSS, JS, GitHub Pages}}{Mar 2020 -- present}
             \resumeItemListStart
                 \resumeItem{A PWA and TWA for Git and GitHub concepts and commands.}
-                \resumeItem{Explains the internal working of Git.}
-                \resumeItem{\textbf{500+ installs on Google Play and 80+ stars on GitHub.}}
+                \resumeItem{Explains the internal working of Git along with various Git commands through articles and illustrations.}
+                \resumeItem{\textbf{500+ installs on Google Play and 90+ stars on GitHub.}}
                 \resumeItem{\href{https://harshkapadia2.github.io/git_basics}{PWA} $|$  \href{https://play.google.com/store/apps/details?id=com.harsh_kapadia.git_basics}{Google Play Store} $|$ \href{https://github.com/HarshKapadia2/git_basics}{GitHub}}
             \resumeItemListEnd
-        \vspace{-13pt}
+        \vspace{-19pt}
 
         \resumeProjectHeading
             {\textbf{HPS Gems} $|$ \emph{HTML, CSS, JS, PHP, MySQL, Heroku}}{Oct 2020 -- Dec 2020}
             \resumeItemListStart
-                \resumeItem{A JAMstack e-Commerce web app dealing in raw gemstones.}
-                \resumeItem{Uses the Fetch API and the Web Components API.}
+                \resumeItem{A JAMstack e-Commerce CRUD web app for selling raw gemstones.}
+                \resumeItem{A user can add items to their cart, place orders and view their shopping history and profile.}
+                \resumeItem{Uses the Fetch API to connect with the PHP API and the Web Components API to optimize rendering products.}
                 \resumeItem{\href{https://hps-gems.herokuapp.com}{Web app} $|$ \href{https://github.com/HarshKapadia2/hps-gems}{GitHub}}
             \resumeItemListEnd
-        \vspace{-13pt}
+        \vspace{-19pt}
     
         \resumeProjectHeading
             {\textbf{Preview Markdown} $|$ \emph{React.js, CSS, JS, GitHub Pages}}{Jun 2021}
             \resumeItemListStart
-                \resumeItem{Renders GitHub-styled markdown live.}
-                \resumeItem{Supports GitHub's light and dark themed Markdown rendering.}
+                \resumeItem{A web app that renders GitHub-styled markdown live.}
+                \resumeItem{Provides full support for GitHub's light and dark themed Markdown rendering.}
                 \resumeItem{\href{https://harshkapadia2.github.io/preview-markdown}{Web app} $|$ \href{https://github.com/HarshKapadia2/preview-markdown}{GitHub}}
             \resumeItemListEnd
-        \vspace{-13pt}
+        \vspace{-19pt}
 
         \resumeProjectHeading
             {\textbf{Attendance Manager} $|$ \emph{Flask, Firebase, Heroku}}{Apr 2020 -- May 2020}
             \resumeItemListStart
-                \resumeItem{A SSR web app for managing student attendance.}
+                \resumeItem{A SSR CRUD web app for managing student attendance.}
+                \resumeItem{A teacher can mark student attendance and check for defaulters per class.}
+                \resumeItem{A student can check their attendance details and their defaulter status per course.}
                 \resumeItem{\href{https://attendance-management-flask.herokuapp.com}{Web app} $|$ \href{https://github.com/HarshKapadia2/attendance_management}{GitHub}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
-\vspace{-15pt}
+\vspace{-19pt}
 
 
 %-----------COMMUNITY ACTIVITY-----------
 \section{Community Activity}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {GitHub Campus Expert}{Oct 2021 -- present}
-            {}{}
-            \vspace{-16pt}
-            \resumeItemListStart
-                \resumeItem{\textbf{One of the 82 students selected out of 8000+ applicants worldwide.}}
-            \resumeItemListEnd
-
-        \resumeSubheading
             {Our Tech Community (OTC)}{Jan 2020 -- present}
             {Founder}{}
+            \vspace{-7pt}
             \resumeItemListStart
                 \resumeItem{A Tech-loving open-to-all community.}
                 \resumeItem{\textbf{Hosted weekly OTC CatchUp sessions since Oct 2020} involving project showcases and technical discussions.}
                 \resumeItem{\href{https://ourtech.communtiy}{Web site} $|$ \href{https://catchup.ourtech.community}{OTC CatchUp}}
             \resumeItemListEnd
+        \vspace{-2pt}
+
+        \resumeSubheading
+            {GitHub Campus Expert}{Oct 2021 -- present}
+            {}{}
+            \vspace{-18pt}
+            \resumeItemListStart
+                \resumeItem{\textbf{One of the 82 students selected out of 8000+ applicants worldwide.}}
+            \resumeItemListEnd
+        \vspace{-4pt}
 
         \resumeSubheading
             {Talks}{Jun 2020 -- present}
             {}{}
-            \vspace{-16pt}
+            \vspace{-18pt}
             \resumeItemListStart
                 \resumeItem{\textbf{Impacted over 700 people} in more than 15 sessions and workshops at various technical meetups on Git and GitHub.}
                 \resumeItem{\href{https://harshkapadia2.github.io/talks}{Talk details} $|$ \href{https://www.youtube.com/HarshKapadia}{YouTube}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-19pt}
 
 
 %-----------EXTRACURRICULAR ACTIVITY-----------
@@ -269,7 +278,7 @@
                 \resumeItem{Conducted a workshop on Git and GitHub. (\href{https://www.youtube.com/watch?v=ArOKEf8nkfw}{YouTube})}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-8pt}
 
 
 \end{document}
