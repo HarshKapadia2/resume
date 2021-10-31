@@ -1,19 +1,21 @@
-name: Compile and upload résumé PDF
+name: Compile and publish résumé PDF
 on:
     push:
         branches:
-            - "main"
+            - main
         paths:
-            - "resume.tex"
-            - "index.html"
             - ".github/workflows/**"
+            - CNAME
+            - "index.html"
+            - "resume.tex"
     pull_request:
         branches:
-            - "main"
+            - main
         paths:
-            - "resume.tex"
-            - "index.html"
             - ".github/workflows/**"
+            - CNAME
+            - "index.html"
+            - "resume.tex"
     workflow_dispatch:
 
 jobs:
@@ -37,8 +39,8 @@ jobs:
                   mkdir build 
                   cp *.pdf build/ 
                   cp index.html build/
+                  cp CNAME build/
                   mv "build/resume.pdf" "build/Résumé for Harsh Kapadia.pdf"
-                  ls build/
 
             - name: Git add
               run: git add *.pdf
