@@ -1,13 +1,13 @@
-%-------------------------
+% -------------------------
 % Resume in Latex
 % Author: Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
 % License: MIT
-%------------------------
+% ------------------------
 
-%------------------------
+% ------------------------
 % Original Overleaf template: https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn
-%------------------------
+% ------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -32,7 +32,7 @@
 \hypersetup{colorlinks,urlcolor=blue}
 
 
-%----------FONT OPTIONS----------
+% ----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
@@ -73,7 +73,7 @@
 % Ensure that the generated PDF is machine readable/ATS parsable.
 \pdfgentounicode=1
 
-%-------------------------
+% -------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -119,14 +119,14 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
+% -------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
 
-%----------HEADING----------
+% ----------HEADING----------
 % \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 %   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
 %   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
@@ -143,7 +143,7 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
+% -----------EDUCATION-----------
 \section{Education}
     \vspace{-4pt}
     \begin{itemize}[leftmargin=0.2in, label={}]
@@ -158,22 +158,22 @@
 \vspace{-20pt}
 
 
-%-----------SKILLS-----------
+% -----------SKILLS-----------
 \section{Skills}
     \vspace{-4pt}
     \begin{itemize}[leftmargin=0.2in, label={}]
         {\item{
             \begin{tabular}{ l@{\hskip 0.2in} l }
                  \textbf{Web}: React.js, Node.js (Express.js), Flask, HTML, CSS, JS & \textbf{Languages}: JavaScript, Java, Python, C \\ 
-                 \textbf{Databases}: MySQL, MongoDB & \textbf{Platforms}: GitHub, Firebase, Heroku, Deta \\  
-                 \textbf{Tools}: Git, \href{https://networking.harshkapadia.me}{Wireshark}, \href{https://harshkapadia2.github.io/asciidoctor-jet}{Asciidoctor Jet}, Figma & \textbf{CI/CD}: GitHub Actions
+                 \textbf{Databases}: MySQL, MongoDB & \textbf{Platforms}: GitHub, Firebase, Heroku \\  
+                 \textbf{Tools}: \href{https://git.harshkapadia.me}{Git}, \href{https://networking.harshkapadia.me}{Wireshark}, \href{https://harshkapadia2.github.io/asciidoctor-jet}{Asciidoctor Jet}, Figma & \textbf{CI/CD}: GitHub Actions
             \end{tabular}
         }}
     \end{itemize}
 \vspace{-22pt}
 
 
-%-----------EXPERIENCE-----------
+% -----------EXPERIENCE-----------
 \section{Experience}
     \vspace{-2pt}
     \resumeSubHeadingListStart
@@ -197,107 +197,103 @@
 \vspace{-19pt}
 
 
-%-----------PROJECTS-----------
+% -----------PROJECTS-----------
 \section{Projects}
     \vspace{-8.5pt}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{\normalsize{Git Graph}} $|$ \emph{React.js, GitHub Pages}}{Jan 2022 -- present}
+            {\textbf{\normalsize{Git Graph}} $|$ \emph{React.js, GitHub Pages} $|$ \href{https://git-graph.harshkapadia.me}{Web app}, \href{https://github.com/HarshKapadia2/git-graph}{GitHub}}{Jan 2022 -- present}
             \resumeItemListStart
                 \resumeItem{A web app to visualize the Directed Acyclic Graph (DAG) that Git uses to connect \href{https://git.harshkapadia.me/\#_git_objects}{Commit, Tree and Blob objects}.}
                 \resumeItem{Takes an existing repository to generate DAG visualizations for local branches and allows highlighting specific commits.}
-                \resumeItem{\href{https://git-graph.harshkapadia.me}{Web app} $|$ \href{https://github.com/HarshKapadia2/git-graph}{GitHub}}
             \resumeItemListEnd
         \vspace{-19pt}
 
         \resumeProjectHeading
-            {\textbf{\normalsize{Git Internals}} $|$ \emph{\href{https://harshkapadia2.github.io/asciidoctor-jet}{Asciidoctor Jet}, GitHub Pages}}{May 2020 -- present}
+            {\textbf{\normalsize{Git Internals}} $|$ \emph{\href{https://harshkapadia2.github.io/asciidoctor-jet}{Asciidoctor Jet}, GitHub Pages} $|$ \href{https://git.harshkapadia.me}{PWA}, \href{https://github.com/HarshKapadia2/git_internals}{GitHub}}{May 2020 -- present}
             \resumeItemListStart
                 \resumeItem{A PWA documenting and explaining the internals of Git.}
                 \resumeItem{Explains the contents of the \texttt{.git} directory, the connections between Commit, Tree and Blob objects, and the need for Packfiles.}
-                \resumeItem{\href{https://git.harshkapadia.me}{PWA} $|$ \href{https://github.com/HarshKapadia2/git_internals}{GitHub}}
             \resumeItemListEnd
         \vspace{-19pt}
 
         \resumeProjectHeading
-            {\textbf{\normalsize{HPS Gems}} $|$ \emph{HTML, CSS, JS, PHP, MySQL, Heroku}}{Oct 2020 -- Dec 2020}
+            {\textbf{\normalsize{OTC CatchUp}} $|$ \emph{HTML, CSS, JS, \href{https://harshkapadia2.github.io/asciidoctor-jet}{Asciidoctor Jet}, Shell, Deta} $|$ \href{https://catchup.ourtech.community}{Web app}, \href{https://github.com/OurTechCommunity/catchup}{GitHub}}{Sep 2021 -- present}
+            \resumeItemListStart
+                \resumeItem{Created a web app for managing weekly \href{https://catchup.ourtech.community}{OTC CatchUp} Tech discussion sessions.}
+                \resumeItem{Hosts session summaries created using \href{https://harshkapadia2.github.io/asciidoctor-jet}{Asciidoctor Jet} and manages session joining links using Deta Base.}
+                \resumeItem{Currently helping manage active Open Source contributions to the project.}
+            \resumeItemListEnd
+        \vspace{-19pt}
+
+        \resumeProjectHeading
+            {\textbf{\normalsize{HPS Gems}} $|$ \emph{HTML, CSS, JS, PHP, MySQL, Heroku} $|$ \href{https://hps-gems.herokuapp.com}{Web app}, \href{https://github.com/HarshKapadia2/hps-gems}{GitHub}}{Oct 2020 -- Dec 2020}
             \resumeItemListStart
                 \resumeItem{A JAMstack e-Commerce CRUD web app for selling raw gemstones.}
                 \resumeItem{Users can add items to their cart, place orders and view their shopping history and profile.}
                 \resumeItem{Uses the Fetch API to connect with the PHP API and uses the Web Components API to optimize rendering products.}
-                \resumeItem{\href{https://hps-gems.herokuapp.com}{Web app} $|$ \href{https://github.com/HarshKapadia2/hps-gems}{GitHub}}
-            \resumeItemListEnd
-        \vspace{-19pt}
-    
-        \resumeProjectHeading
-            {\textbf{\normalsize{Preview Markdown}} $|$ \emph{React.js, CSS, JS, GitHub Pages}}{Jun 2021}
-            \resumeItemListStart
-                \resumeItem{A web app that renders GitHub-styled markdown live.}
-                \resumeItem{Supports GitHub's light and dark themed Markdown rendering.}
-                \resumeItem{\href{https://harshkapadia2.github.io/preview-markdown}{Web app} $|$ \href{https://github.com/HarshKapadia2/preview-markdown}{GitHub}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-19pt}
 
 
-%-----------COMMUNITY ACTIVITY-----------
+% -----------COMMUNITY ACTIVITY-----------
 \section{Community Activity}
     \vspace{-2pt}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {Our Tech Community (OTC)}{Jan 2020 -- present}
+            {\textbf{\normalsize{Our Tech Community (OTC)}} $|$ {\normalfont \href{https://ourtech.community}{ourtech.community}}}{Jan 2020 -- present}
             {Organiser}{}
             \vspace{-7pt}
             \resumeItemListStart
                 \resumeItem{Started a Tech-loving open-to-all community with 400+ current members.}
-                \resumeItem{Hosted over 500 hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} sessions since Oct 2020 involving technical discussions, project showcases and talks.}
+                \resumeItem{Hosted 600+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} sessions involving technical discussions, project showcases and talks.}
                 \resumeItem{Organised an in-person \href{https://meetup.ourtech.community}{OTC MeetUp} event with 60+ attendees.}
-                \resumeItem{\href{https://ourtech.community}{ourtech.community}}
             \resumeItemListEnd
         \vspace{-4pt}
 
         \resumeSubheading
-            {Talks}{Jun 2020 -- present}
+            {\textbf{\normalsize{Talks}} $|$ {\normalfont \href{https://talks.harshkapadia.me}{talks.harshkapadia.me}}}{Jun 2020 -- present}
             {}{}
             \vspace{-18pt}
             \resumeItemListStart
-                \resumeItem{Impacted over 700 people in more than 16 talks and workshops at various technical meetups.}
-                \resumeItem{\href{https://talks.harshkapadia.me}{talks.harshkapadia.me} $|$ \href{https://www.youtube.com/HarshKapadia}{YouTube}}
+                \resumeItem{Impacted 700+ people in 17+ talks and workshops at various technical meetups.}
+                \resumeItem{Conducted an in-person workshop on \href{https://talks.harshkapadia.me/git_internals}{The Internals of Git} at TechTogether Boston 2022.}
+                \resumeItem{Gave talks on \href{https://gdsc.community.dev/events/details/developer-student-clubs-thadomal-shahani-engineering-college-mumbai-presents-git-and-github-workshop}{Git basics}, \href{https://gdsc.community.dev/events/details/developer-student-clubs-thadomal-shahani-engineering-college-mumbai-presents-git-internals-how-does-git-work}{Git internals} and \href{https://gdsc.community.dev/events/details/developer-student-clubs-thadomal-shahani-engineering-college-mumbai-presents-working-with-cicd-github-actions}{GitHub Actions} for Hacktoberfest 2021 at GDSC TSEC with 200+ participants.}
             \resumeItemListEnd
         \vspace{-4pt}
 
         \resumeSubheading
-            {GitHub Campus Expert}{Oct 2021 -- present}
+            {\textbf{\normalsize{GitHub Campus Expert}} $|$ {\normalfont \href{https://githubcampus.expert/HarshKapadia2}{Profile}}}{Oct 2021 -- present}
             {}{}
             \vspace{-18pt}
             \resumeItemListStart
                 \resumeItem{One of the 82 students selected out of 8000+ applicants worldwide.}
-                \resumeItem{\href{https://githubcampus.expert/HarshKapadia2}{Campus Expert profile}}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-19pt}
 
 
-%-----------EXTRACURRICULAR ACTIVITY-----------
+% -----------EXTRACURRICULAR ACTIVITY-----------
 \section{Extracurricular Activity}
     \vspace{-2pt}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {TSEC CodeCell}{Sep 2019 -- Jun 2022}
-            {Senior Committee Member}{}
-            \vspace{-7pt}
+            {Hackathons}{Sep 2019 -- present}
+            {}{}
+            \vspace{-18pt}
             \resumeItemListStart
-                \resumeItem{Organised three hackathons, TSEC Hacks 2020, 2021 and 2022. (\href{https://blog.harshkapadia.me/2022/hackathon-team-attitude}{Learnings})}
-                \resumeItem{Conducted a workshop on Git and GitHub. (\href{https://www.youtube.com/watch?v=ArOKEf8nkfw}{YouTube})}
+                \resumeItem{Organised three editions of TSEC CodeCell's \href{https://www.tseccodecell.com/tsec-hacks}{TSEC Hacks} (2020-22) with 200+ in-person participants. (\href{https://blog.harshkapadia.me/2022/hackathon-team-attitude}{Learnings})}
+                \resumeItem{Mentored and judged in-person at HackMIT 2022 and TechTogether Boston 2022.}
             \resumeItemListEnd
         \vspace{-4pt}
 
         \resumeSubheading
-            {Google Developer Student Clubs TSEC}{Aug 2020 -- Jul 2022}
-            {Core Team Member}{}
+            {Google Developer Student Clubs Boston University}{Sep 2022 -- present}
+            {Tech Lead}{}
             \vspace{-7pt}
             \resumeItemListStart
-                \resumeItem{Gave three talks on \href{https://gdsc.community.dev/events/details/developer-student-clubs-thadomal-shahani-engineering-college-mumbai-presents-git-and-github-workshop}{Git basics}, \href{https://gdsc.community.dev/events/details/developer-student-clubs-thadomal-shahani-engineering-college-mumbai-presents-git-internals-how-does-git-work}{Git internals} and \href{https://gdsc.community.dev/events/details/developer-student-clubs-thadomal-shahani-engineering-college-mumbai-presents-working-with-cicd-github-actions}{GitHub Actions} for Hacktoberfest 2021 with 200+ participants.}
+                \resumeItem{Co-hosted a workshop on the basics of React.js.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-8pt}
