@@ -6,6 +6,7 @@ on:
             - main
         paths:
             - ".github/workflows/**"
+            - "static/**"
             - CNAME
             - "index.html"
             - "resume.tex"
@@ -14,6 +15,7 @@ on:
             - main
         paths:
             - ".github/workflows/**"
+            - "static/**"
             - CNAME
             - "index.html"
             - "resume.tex"
@@ -38,13 +40,15 @@ jobs:
             - name: Post Processing
               run: |
                   mkdir build 
-                  cp *.pdf build/ 
-                  cp index.html build/
+                  cp -r static/ build/
                   cp CNAME build/
+                  cp favicon.ico build/
+                  cp index.html build/
+                  cp resume.pdf build/
                   mv "build/resume.pdf" "build/Résumé for Harsh Kapadia.pdf"
 
             - name: Git add
-              run: git add *.pdf
+              run: git add "build/Résumé for Harsh Kapadia.pdf"
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4
