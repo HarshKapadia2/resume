@@ -1,0 +1,270 @@
+% -------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+% ------------------------
+
+% ------------------------
+% Original Overleaf template: https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn
+% ------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+
+% ----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+% \usepackage{times}
+% \usepackage{helvet}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that the generated PDF is machine readable/ATS parsable.
+\pdfgentounicode=1
+
+% -------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}\textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% -------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+% ----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\huge \scshape Harsh Kapadia} \\ \vspace{5pt}
+    \small
+    \href{https://harshkapadia.me}{harshkapadia.me} $|$ \href{https://github.com/HarshKapadia2}{github.com/HarshKapadia2} $|$ \href{https://linkedin.com/in/harshgkapadia}{linkedin.com/in/harshgkapadia} $|$ \href{mailto:contact@harshkapadia.me}{contact@harshkapadia.me}
+    \vspace{-8pt}
+\end{center}
+
+
+% -----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Boston University -- The Graduate School of Arts \& Sciences}{Dec 2023}
+            {Master of Science in Computer Science (SGPI: 3.80 / 4.0)}{Boston, USA}
+            \resumeItemListStart
+                \resumeItem{Courses: Transport Protocol `\href{https://networking.harshkapadia.me/homa}{Homa}', Computer Networks, Network Security, Databases, Software Engineering}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {University of Mumbai -- Thadomal Shahani Engineering College}{May 2022}
+            {Bachelor of Engineering in Information Technology (CGPA: 9.02 / 10.0)}{Mumbai, India}
+            \resumeItemListStart
+                \resumeItem{Courses: Web Dev., Computer Networks, Network Security, Database Management, Project Management}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-19pt}
+
+
+% -----------SKILLS-----------
+\section{Skills}
+    \vspace{-2pt}
+    \begin{itemize}[leftmargin=0.2in, label={}]
+        {\item{
+            \begin{tabular}{ l@{\hskip 0.2in} l }
+                 \textbf{Tools}: Wireshark, Tcpdump, Git & \textbf{Languages}: Python (Scapy), C, Java, JavaScript \\ 
+                 \textbf{Platforms}: GENI, GitHub, Firebase & \textbf{Databases}: MySQL, MongoDB \\  
+                 \textbf{Web}: React.js, Node.js, HTML, CSS, JS
+            \end{tabular}
+        }}
+    \end{itemize}
+\vspace{-20pt}
+
+
+% -----------EXPERIENCE-----------
+\section{Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {NanoNet Technologies Inc.}{Aug 2021 -- Nov 2021}
+            {Software Intern}{Remote}
+            \resumeItemListStart
+                \resumeItem{Published two \href{https://www.npmjs.com/package/@nanonets/optical-character-recognition}{OCR} and \href{https://www.npmjs.com/package/@nanonets/image-classification}{Image Classification} SDKs to improve Developer Experience.}
+                \resumeItem{Enhanced documentation by enforcing the OpenAPI 3.1.0 standard and adding more code samples.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+% -----------PROJECTS-----------
+\section{Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{\normalsize{Performance Comparison of TCP Versions}} $|$ \emph{GENI} $|$ \href{https://harshkapadia2.github.io/tcp-version-performance-comparison}{Report}, \href{https://github.com/HarshKapadia2/tcp-version-performance-comparison}{GitHub}}{Nov 2022 -- Dec 2022}
+            \resumeItemListStart
+                \resumeItem{Compared Congestion Window size responses of TCP Reno, TCP CUBIC, TCP Vegas and TCP BBR to network congestion.}
+                \resumeItem{Compared the fairness of two TCP versions running simultaneously on the same connection.}
+            \resumeItemListEnd
+        \vspace{-15pt}
+
+        \resumeProjectHeading
+            {\textbf{\normalsize{Reliable Transport Protocols}} $|$ \emph{Java}}{Oct 2022 -- Nov 2022}
+            \resumeItemListStart
+                \resumeItem{Implemented Stop-and-Wait, Selective-Repeat and Go-Back-N type reliable transport protocols.}
+                \resumeItem{Cumulative and Selective Acknowledgements were used in a lossy environment.}
+            \resumeItemListEnd
+        \vspace{-15pt}
+
+        \resumeProjectHeading
+            {\textbf{\normalsize{TCP Performance Measurement}} $|$ \emph{Java}}{Oct 2022}
+            \resumeItemListStart
+                \resumeItem{Used Socket Programming to measure the RTT and Throughput of a TCP connection.}
+                \resumeItem{Implemented a protocol message format to conduct measurements for various payload sizes.}
+            \resumeItemListEnd
+        \vspace{-15pt}
+
+        \resumeProjectHeading
+            {\textbf{\normalsize{ARP Spoofing and DNS Cache Poisoning}} $|$ \emph{Python (Scapy)}}{Feb 2023 -- Mar 2023}
+            \resumeItemListStart
+                \resumeItem{Carried out ARP Spoofing and DNS Cache Poisoning inside a controlled Docker environment.}
+            \resumeItemListEnd
+        \vspace{-15pt}
+
+        \resumeProjectHeading
+            {\textbf{\normalsize{Git Graph}} $|$ \emph{React.js} $|$ \href{https://git-graph.harshkapadia.me}{Web app}, \href{https://github.com/HarshKapadia2/git-graph}{GitHub}}{Jan 2022 -- present}
+            \resumeItemListStart
+                \resumeItem{A web app to visualize the graphs that Git creates to connect Commit, Tree and Blob objects internally.}
+                \resumeItem{Takes an existing repository to generate graph visualizations for local branches and allows highlighting specific commits.}
+                \resumeItem{Taught 100+ people \href{https://talks.harshkapadia.me/git_internals}{the internals of Git} using Git Graph in my talks.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+% -----------EXTRACURRICULAR ACTIVITY-----------
+\section{Extracurricular Activity}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {\textbf{\normalsize{Articles}} $|$ {\normalfont \href{https://networking.harshkapadia.me}{networking.harshkapadia.me}}}{Dec 2020 -- present}
+            {}{}
+            \vspace{-15pt}
+            \resumeItemListStart
+                \resumeItem{Wrote in-depth articles on \href{https://networking.harshkapadia.me/homa}{Homa}, \href{https://networking.harshkapadia.me/tls}{TLS}, \href{https://networking.harshkapadia.me/ssh}{SSH}, \href{https://talks.harshkapadia.me/mac-and-ip-routing/content}{IP and MAC Routing}, \href{https://networking.harshkapadia.me/tcp}{TCP}, etc.}
+                \resumeItem{Analysed packet captures to understand protocol design decisions.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {\textbf{\normalsize{Talks}} $|$ {\normalfont \href{https://talks.harshkapadia.me}{talks.harshkapadia.me}}}{Jun 2020 -- present}
+            {}{}
+            \vspace{-15pt}
+            \resumeItemListStart
+                \resumeItem{Impacted 700+ people in 20+ talks and workshops at various technical meetups.}
+                \resumeItem{Gave talks on `\href{https://talks.harshkapadia.me/mac-and-ip-routing/content}{Routing Using IP and MAC Addresses}', \href{https://talks.harshkapadia.me/git_internals}{Git internals}, etc.}
+                \resumeItem{Conducted in-person talks on \href{https://talks.harshkapadia.me/git_internals}{The Internals of Git} at TechTogether Boston 2022 and BostonHacks 2022.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {\textbf{\normalsize{Our Tech Community (OTC)}} $|$ {\normalfont \href{https://ourtech.community}{ourtech.community}}}{Jan 2020 -- present}
+            {Organiser}{}
+            \resumeItemListStart
+                \resumeItem{Started a Tech-loving open-to-all community with 500+ current members.}
+                \resumeItem{Hosted 800+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} sessions involving technical discussions, project showcases and talks.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\end{document}
