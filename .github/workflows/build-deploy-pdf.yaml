@@ -43,12 +43,10 @@ jobs:
 
             - name: Post Processing
               run: |
-                  ls -a .
-                  ls -a networking/
                   mkdir build
                   mkdir build/networking
                   cp networking/index.html build/networking/
-                  cp networking/networking-resume.pdf build/networking/
+                  cp networking-resume.pdf build/networking/
                   mv build/networking/networking-resume.pdf build/networking/harsh-kapadia-resume.pdf
                   cp -r static/ build/
                   cp CNAME build/
