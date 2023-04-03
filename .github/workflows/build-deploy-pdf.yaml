@@ -43,6 +43,8 @@ jobs:
 
             - name: Post Processing
               run: |
+                  ls -a .
+                  ls -a networking/
                   mkdir build
                   mkdir build/networking
                   cp networking/index.html build/networking/
@@ -54,9 +56,6 @@ jobs:
                   cp index.html build/
                   cp base-resume.pdf build/
                   mv build/base-resume.pdf build/harsh-kapadia-resume.pdf
-
-            - name: Git add
-              run: git add build/harsh-kapadia-resume.pdf build/networking/harsh-kapadia-resume.pdf
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4
