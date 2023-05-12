@@ -45,13 +45,13 @@ jobs:
               run: |
                   mkdir build
                   mkdir build/networking
-                  cp networking/index.html build/networking/
+                  cp networking/*.html build/networking/
                   cp networking-resume.pdf build/networking/
                   mv build/networking/networking-resume.pdf build/networking/harsh-kapadia-resume.pdf
                   cp -r static/ build/
                   cp CNAME build/
                   cp favicon.ico build/
-                  cp index.html build/
+                  cp *.html build/
                   cp base-resume.pdf build/
                   mv build/base-resume.pdf build/harsh-kapadia-resume.pdf
 
