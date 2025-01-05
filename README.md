@@ -2,8 +2,8 @@
 
 -   Base résumé: [resume.harshkapadia.me](https://resume.harshkapadia.me)
 -   Embedded base résumé: [resume.harshkapadia.me/embed](https://resume.harshkapadia.me/embed)
--   Networking résumé: [resume.harshkapadia.me/networking](https://resume.harshkapadia.me/networking)
--   Embedded networking résumé: [resume.harshkapadia.me/networking/embed](https://resume.harshkapadia.me/networking/embed)
+-   ~Networking résumé: [resume.harshkapadia.me/networking](https://resume.harshkapadia.me/networking)~ (Not maintained)
+-   ~Embedded networking résumé: [resume.harshkapadia.me/networking/embed](https://resume.harshkapadia.me/networking/embed)~ (Not maintained)
 
 Credits:
 
